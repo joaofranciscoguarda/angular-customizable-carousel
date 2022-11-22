@@ -1,0 +1,30 @@
+<section>
+  <h1>Angular Carousels</h1>
+  <br />
+  <div class="wrapper">
+    <div>
+      <h2>Normal</h2>
+      <app-carousel [images]="images"></app-carousel>
+    </div>
+    <div>
+      <h2>Auto Slide</h2>
+      <app-carousel [images]="images" [autoSlide]="true"></app-carousel>
+    </div>
+    <div>
+      <h2>Auto Slide with custom interval</h2>
+      <app-carousel
+        [images]="images"
+        [autoSlide]="true"
+        [slideInterval]="1000"
+      ></app-carousel>
+    </div>
+    <div>
+      <h2>No dot indicators</h2>
+      <app-carousel [images]="images" [indicators]="false"></app-carousel>
+    </div>
+    <div>
+      <h2>No side controls</h2>
+      <app-carousel [images]="images" [controls]="false"></app-carousel>
+    </div>
+  </div>
+</section>
